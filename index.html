@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TouchGrass · Micro-breaks, macro-you.</title>
+    <meta
+      name="description"
+      content="TouchGrass is a playful desktop companion that nudges you to take tiny, offline breaks. Dark-first, open-source, and free forever."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="brand" href="#top" aria-label="TouchGrass home">
+          <span class="brand-mark">TG</span>
+          <span class="brand-name">TouchGrass</span>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-links" id="navLinks">
+          <a href="#features">Features</a>
+          <a href="#how-it-works">How it works</a>
+          <a href="#screens">Screens</a>
+          <a href="#faq">FAQ</a>
+          <a href="#community">Community</a>
+          <button class="theme-toggle" id="themeToggle" type="button">
+            <span class="theme-toggle-track">
+              <span class="theme-toggle-thumb" id="themeThumb"></span>
+            </span>
+            <span class="theme-toggle-label">Light</span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" id="hero">
+        <div class="hero-copy">
+          <p class="hero-eyebrow">Break reminders for humans with hobbies.</p>
+          <h1>
+            <span class="accent">TouchGrass</span> keeps you honest about your
+            screen time.
+          </h1>
+          <p class="hero-subtitle">
+            Tray-first, idle-aware, delightfully sarcastic. Tiny nudges that
+            give your spine a breather.
+          </p>
+          <div class="hero-actions">
+            <a
+              class="primary-button"
+              href="https://github.com/KayraNafi/TouchGrass/releases"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Download for free
+            </a>
+            <a
+              class="secondary-button"
+              href="https://github.com/KayraNafi/TouchGrass"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View on GitHub
+            </a>
+          </div>
+          <p class="hero-tagline" id="heroTagline" aria-live="polite">
+            Go touch grass.
+          </p>
+        </div>
+        <div class="hero-visual">
+          <div class="floating-card" role="presentation">
+            <div class="card-header">
+              <span class="status-dot"></span>
+              TouchGrass Reminder
+            </div>
+            <div class="card-body">
+              <p>You have been crushing it for 45 minutes straight.</p>
+              <p class="card-emphasis">Stand, stretch, maybe blink twice?</p>
+            </div>
+            <div class="card-footer">
+              <button type="button" class="chip">Snooze 5 min</button>
+              <button type="button" class="chip">Pause</button>
+              <button type="button" class="chip chip-accent">Mark break</button>
+            </div>
+          </div>
+          <div class="orb orb-left"></div>
+          <div class="orb orb-right"></div>
+        </div>
+      </section>
+
+      <section class="section features" id="features">
+        <header class="section-header">
+          <p class="section-eyebrow">Why your future self approves</p>
+          <h2>Micro-breaks, macro-you.</h2>
+        </header>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h3>Idle-aware timers</h3>
+            <p>
+              TouchGrass tracks your keyboard and mouse activity (never what you
+              type) so reminders land only when you are actually working.
+            </p>
+          </article>
+          <article class="feature-card">
+            <h3>Tray-first controls</h3>
+            <p>
+              Snooze, pause, tweak intervals, or open settings directly from the
+              tray. No full window in your face, unless you want it.
+            </p>
+          </article>
+          <article class="feature-card">
+            <h3>Playful nudges</h3>
+            <p>
+              Friendly sarcasm, optional chime, and custom reminders that never
+              shame you for losing track of time.
+            </p>
+          </article>
+          <article class="feature-card">
+            <h3>Dark by default</h3>
+            <p>
+              Crisp dark theme out of the box with an opt-in light mode. Your
+              retinas get a break too.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section highlight" id="how-it-works">
+        <div class="highlight-content">
+          <header class="section-header">
+            <p class="section-eyebrow">How TouchGrass thinks</p>
+            <h2>Stay focused without burning out.</h2>
+            <p>
+              The desktop companion lives quietly in your tray while keeping you
+              accountable to the breaks you promised yourself.
+            </p>
+          </header>
+          <ol class="steps">
+            <li>
+              <span class="step-number">1</span>
+              <div>
+                <h3>Set your cadence</h3>
+                <p>
+                  Choose a preset interval or roll your own. TouchGrass respects
+                  your schedule, even the weird ones.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span class="step-number">2</span>
+              <div>
+                <h3>Idle-aware smarts</h3>
+                <p>
+                  If you wander away for longer than your idle threshold, the
+                  timer resets when you come back. There is no point in nagging
+                  an empty chair.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span class="step-number">3</span>
+              <div>
+                <h3>Playful reminders</h3>
+                <p>
+                  Notifications pop with a gentle chime and a nudge to stand,
+                  stretch, hydrate, or, yes, touch grass.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section screens" id="screens">
+        <header class="section-header">
+          <p class="section-eyebrow">Peek inside</p>
+          <h2>Feels native on every platform.</h2>
+          <p>
+            Built with Tauri + Svelte for a lightweight footprint and instant
+            updates across Windows, macOS, and Linux.
+          </p>
+        </header>
+        <div class="screen-grid">
+          <article class="screen-card">
+            <h3>Reminder popups</h3>
+            <p>
+              Clean notifications with quick actions so you can break without
+              breaking flow.
+            </p>
+          </article>
+          <article class="screen-card">
+            <h3>Settings that matter</h3>
+            <p>
+              Configure intervals, idle detection, chimes, and autostart from a
+              single, tidy panel.
+            </p>
+          </article>
+          <article class="screen-card">
+            <h3>Tray quick actions</h3>
+            <p>
+              Pause reminders, snooze for 5 or 15 minutes, or hop into settings
+              without lifting ten tabs.
+            </p>
+          </article>
+        </div>
+        <a
+          class="ghost-link"
+          href="https://github.com/KayraNafi/TouchGrass#features"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Read the full feature breakdown →
+        </a>
+      </section>
+
+      <section class="section community" id="community">
+        <div class="community-card">
+          <header class="section-header">
+            <p class="section-eyebrow">Open-source & collaborative</p>
+            <h2>TouchGrass thrives on community.</h2>
+          </header>
+          <div class="community-columns">
+            <div>
+              <h3>Fork-friendly</h3>
+              <p>
+                TouchGrass lives on GitHub under an open-source license. File
+                issues, suggest features, or ship a PR—your future self thanks
+                you.
+              </p>
+            </div>
+            <div>
+              <h3>Roadmap ready</h3>
+              <p>
+                Cross-platform packages, smarter snooze options, and tests are
+                up next. Jump in and help shape the experience.
+              </p>
+            </div>
+          </div>
+          <div class="community-actions">
+            <a
+              class="primary-button"
+              href="https://github.com/KayraNafi/TouchGrass"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Star on GitHub
+            </a>
+            <a
+              class="secondary-button"
+              href="https://github.com/KayraNafi/TouchGrass/issues"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Browse open issues
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section faq" id="faq">
+        <header class="section-header">
+          <p class="section-eyebrow">The quick answers</p>
+          <h2>FAQ</h2>
+        </header>
+        <div class="faq-grid">
+          <article class="faq-item">
+            <h3>Is TouchGrass really free?</h3>
+            <p>
+              Yep. Download builds from GitHub releases or run it from source.
+              No ads, no tracking, just healthier work habits.
+            </p>
+          </article>
+          <article class="faq-item">
+            <h3>Will it work with my OS?</h3>
+            <p>
+              TouchGrass ships for Windows, macOS, and Linux. Built with Tauri,
+              it feels native wherever you work.
+            </p>
+          </article>
+          <article class="faq-item">
+            <h3>Can I contribute?</h3>
+            <p>
+              Absolutely. Check the roadmap, open an issue, or submit a pull
+              request. Friendly sarcasm included.
+            </p>
+          </article>
+          <article class="faq-item">
+            <h3>Does it need internet?</h3>
+            <p>
+              Nope. Reminders all happen locally, and your preferences stay on
+              your machine.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div>
+          <span class="brand-mark footer-mark">TG</span>
+          <span class="brand-name">TouchGrass</span>
+        </div>
+        <p>
+          Tiny, offline nudges to help you step away. Built with Tauri &amp;
+          Svelte. Open-source on GitHub.
+        </p>
+        <div class="footer-links">
+          <a href="https://github.com/KayraNafi/TouchGrass" target="_blank" rel="noopener noreferrer"
+            >Repository</a
+          >
+          <a
+            href="https://github.com/KayraNafi/TouchGrass/releases"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Download</a
+          >
+          <a
+            href="https://github.com/KayraNafi/TouchGrass#roadmap-snapshot"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Roadmap</a
+          >
+        </div>
+      </div>
+      <p class="footer-tagline">You sure you are 20s?</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

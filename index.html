@@ -15,14 +15,30 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-XJV6QH60ZS"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-XJV6QH60ZS");
+    </script>
   </head>
   <body>
     <div class="bg-grid" aria-hidden="true"></div>
     <header class="site-header">
       <nav class="nav">
         <a class="brand" href="#top" aria-label="TouchGrass home">
-          <span class="brand-mark">TG</span>
-          <span class="brand-name">TouchGrass</span>
+          <img
+            class="brand-logo"
+            src="TouchGrassLogo.png"
+            alt="TouchGrass logo"
+          />
         </a>
         <button class="nav-toggle" id="navToggle" aria-expanded="false">
           <span class="sr-only">Toggle navigation</span>
